@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Payment</h1>
+                    <h6>Please Enter Your Details for Payment</h6>
+                </div>
+                <form action="/pay" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input formControlName="name" type="text" class="form-control" id="name" 
+                            required>
+                        
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="amount" class="form-label">Amount</label>
+                        <input formControlName="amount" type="number" class="form-control" id="amount" required>
+                    </div>
+                    
+                    <div class="col-mb-3" style="margin-top: 20px;">
+                        <button type="submit" class="btn btn-primary">MakePayLink</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Add ProductList</h1>
+                </div>
+                <form [formGroup]="productListForm" (ngSubmit)="addproduct()">
+                    <div class="mb-3">
+                        <label for="iname" class="form-label">Item Name</label>
+                        <input formControlName="iname" type="text" class="form-control" id="iname" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Price</label>
+                        <input formControlName="price" type="number" class="form-control" id="price" required>
+                    </div>
+                    <div class="col-mb-3">
+                        <div class="col-mb-3">
+                            <label for="image" class="form-label">Image</label>
+                            <input formControlName="image" type="text" class="form-control" id="image" required>
+                        </div>
+                    </div>
+                    <div class="col-mb-3">
+                        <div class="col-mb-3">
+                            <label for="quantity" class="form-label">Quantity</label>
+                            <input formControlName="quantity" type="number" class="form-control" id="quantity" required>
+                        </div>
+                    </div>
+
+                    <div class="col-mb-3" style="margin-top: 20px;">
+                        <button type="submit" class="btn btn-primary">Add Product</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

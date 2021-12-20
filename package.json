@@ -1,5 +1,5 @@
 {
-  "name": "ecommerseproject",
+  "name": "shop",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -15,10 +15,17 @@
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
     "@angular/forms": "~12.2.0",
+    "@angular/localize": "~12.2.0",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@ng-bootstrap/ng-bootstrap": "^10.0.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.0",
+    "ejs": "^3.1.6",
+    "instamojo-nodejs": "^0.0.5",
     "rxjs": "~6.6.0",
+    "stripe": "^8.191.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },

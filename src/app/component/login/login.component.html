@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login</h1>
+                    <h6>Please Enter Email and Password</h6>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                            required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input formControlName="password" type="password" class="form-control" id="password" required><a class="_2QKxJ- _2_DUc_" tabindex="-1" styl><span style="color: white;">Forgot?</span></a>
+                    </div>
+                    <div class="col-mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-mb-3" style="margin-top: 20px;">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                </form>
+                <a routerLink="/register"  style="color: white;">New User ? Click to SingUp  ></a>
+            </div>
+        </div>
+    </div>
+</div>

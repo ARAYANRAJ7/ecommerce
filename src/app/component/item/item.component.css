@@ -1,0 +1,19 @@
+.card{
+    margin-top: 30px;
+    margin: auto;
+    border:solid red 5px;
+    border-radius: 5%;
+    width:450px;
+    padding:40px;
+    position:absolute;
+    top:10%;
+    left: 10%;
+    background: hsla(205, 46%,30%, 1);
+    background: linear-gradient(90deg,hsla(205, 46%,30%, 1)0%,hsla(260,29%,36%,1)100%);
+}
+.card h1,h6 {
+    color: white;
+}
+label{
+    color: white;
+}
